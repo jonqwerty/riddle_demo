@@ -14,6 +14,18 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-keybar-keybarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-keybar-keybarTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		1D492294D8EC4292816A1F44 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF5E16A6E5AF430E92D25032 /* Poppins-Black.ttf */; };
+		E77FA2C1CF45467587CAA101 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEC8B8AB41014599BB9B13A8 /* Poppins-Bold.ttf */; };
+		859DB6C2CC2B45F88C3A8A63 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86A27C91A6114C2AAB639BDE /* Poppins-ExtraBold.ttf */; };
+		74E18FFC773F47C9B89AC081 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85EF62F13F7C425C8BD2C9F9 /* Poppins-ExtraLight.ttf */; };
+		5F003D2A7D3046C6944AA046 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AC77FDAA54C638CD5EC2E /* Poppins-Light.ttf */; };
+		A5C816A997BF48099A3A5728 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F50AED7A58424ACA8C6E1C51 /* Poppins-Medium.ttf */; };
+		EF49EBB26C754BD896A80C5A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A48545FE90149329B02EC43 /* Poppins-Regular.ttf */; };
+		A1DADDF8CF1744089850E4E0 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CEAB0A3C9AC4FDE971DF946 /* Poppins-SemiBold.ttf */; };
+		E128ECB4180049B0B716B7BF /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 631FF05B91764F7F904CDE4F /* Poppins-Thin.ttf */; };
+		F440ECF410FA42CFB5B7CBF7 /* lego.png in Resources */ = {isa = PBXBuildFile; fileRef = D081985EB5E14485B61E6B77 /* lego.png */; };
+		A2F03026B2A64D5AAC76B808 /* mcdonalds.png in Resources */ = {isa = PBXBuildFile; fileRef = 78A74506ECE84D8F84689D5C /* mcdonalds.png */; };
+		B035B0D5DF6342A19BFAC0FC /* nike.png in Resources */ = {isa = PBXBuildFile; fileRef = E303350B30564F58813E8A79 /* nike.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,18 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = keybar/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-keybar-keybarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keybar-keybarTests.release.xcconfig"; path = "Target Support Files/Pods-keybar-keybarTests/Pods-keybar-keybarTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		CF5E16A6E5AF430E92D25032 /* Poppins-Black.ttf */ = {isa = PBXFileReference; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DEC8B8AB41014599BB9B13A8 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		86A27C91A6114C2AAB639BDE /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraBold.ttf"; path = "../src/assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85EF62F13F7C425C8BD2C9F9 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraLight.ttf"; path = "../src/assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5A7AC77FDAA54C638CD5EC2E /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F50AED7A58424ACA8C6E1C51 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7A48545FE90149329B02EC43 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1CEAB0A3C9AC4FDE971DF946 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		631FF05B91764F7F904CDE4F /* Poppins-Thin.ttf */ = {isa = PBXFileReference; name = "Poppins-Thin.ttf"; path = "../src/assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D081985EB5E14485B61E6B77 /* lego.png */ = {isa = PBXFileReference; name = "lego.png"; path = "../src/assets/images/lego.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		78A74506ECE84D8F84689D5C /* mcdonalds.png */ = {isa = PBXFileReference; name = "mcdonalds.png"; path = "../src/assets/images/mcdonalds.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E303350B30564F58813E8A79 /* nike.png */ = {isa = PBXFileReference; name = "nike.png"; path = "../src/assets/images/nike.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +146,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				3F5700B711404E288CB758BD /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +172,26 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		3F5700B711404E288CB758BD /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				CF5E16A6E5AF430E92D25032 /* Poppins-Black.ttf */,
+				DEC8B8AB41014599BB9B13A8 /* Poppins-Bold.ttf */,
+				86A27C91A6114C2AAB639BDE /* Poppins-ExtraBold.ttf */,
+				85EF62F13F7C425C8BD2C9F9 /* Poppins-ExtraLight.ttf */,
+				5A7AC77FDAA54C638CD5EC2E /* Poppins-Light.ttf */,
+				F50AED7A58424ACA8C6E1C51 /* Poppins-Medium.ttf */,
+				7A48545FE90149329B02EC43 /* Poppins-Regular.ttf */,
+				1CEAB0A3C9AC4FDE971DF946 /* Poppins-SemiBold.ttf */,
+				631FF05B91764F7F904CDE4F /* Poppins-Thin.ttf */,
+				D081985EB5E14485B61E6B77 /* lego.png */,
+				78A74506ECE84D8F84689D5C /* mcdonalds.png */,
+				E303350B30564F58813E8A79 /* nike.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -243,6 +288,18 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1D492294D8EC4292816A1F44 /* Poppins-Black.ttf in Resources */,
+				E77FA2C1CF45467587CAA101 /* Poppins-Bold.ttf in Resources */,
+				859DB6C2CC2B45F88C3A8A63 /* Poppins-ExtraBold.ttf in Resources */,
+				74E18FFC773F47C9B89AC081 /* Poppins-ExtraLight.ttf in Resources */,
+				5F003D2A7D3046C6944AA046 /* Poppins-Light.ttf in Resources */,
+				A5C816A997BF48099A3A5728 /* Poppins-Medium.ttf in Resources */,
+				EF49EBB26C754BD896A80C5A /* Poppins-Regular.ttf in Resources */,
+				A1DADDF8CF1744089850E4E0 /* Poppins-SemiBold.ttf in Resources */,
+				E128ECB4180049B0B716B7BF /* Poppins-Thin.ttf in Resources */,
+				F440ECF410FA42CFB5B7CBF7 /* lego.png in Resources */,
+				A2F03026B2A64D5AAC76B808 /* mcdonalds.png in Resources */,
+				B035B0D5DF6342A19BFAC0FC /* nike.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
