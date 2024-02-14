@@ -79,7 +79,13 @@ const RiddleCard: FC<IRiddleCardProps> = ({
 export default RiddleCard;
 
 const styles = StyleSheet.create({
-  container: {height: 200, borderRadius: 26, backgroundColor: Colors.white},
+  container: {
+    height: 200,
+    borderRadius: 26,
+    backgroundColor: Colors.white,
+    width: SCREEN_WIDTH - 2 * MAIN_HORIZONTAL_PADDING,
+    alignSelf: 'center',
+  },
 
   innerContainer: {
     height: 198,

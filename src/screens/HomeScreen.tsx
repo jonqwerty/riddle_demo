@@ -5,6 +5,7 @@ import Layout from '../layout/Layout';
 import RiddleCard from '../components/RiddleCard';
 import {Colors} from '../common/style';
 import RiddleCardSmall from '../components/RiddleCardSmall';
+import {MAIN_HORIZONTAL_PADDING, SCREEN_WIDTH} from '../common/constants';
 
 const HomeScreen: FC = () => {
   return (
@@ -62,5 +63,11 @@ export default HomeScreen;
 
 const styles = StyleSheet.create({
   gap: {height: 30},
-  row: {flexDirection: 'row', justifyContent: 'space-between'},
+
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: SCREEN_WIDTH - 2 * MAIN_HORIZONTAL_PADDING,
+    alignSelf: 'center',
+  },
 });

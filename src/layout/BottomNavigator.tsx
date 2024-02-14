@@ -9,6 +9,7 @@ import {Colors, FontFamily} from '../common/style';
 import IcHome from '../icons/IcHome';
 import IcLeaderboard from '../icons/IcLeaderboard';
 import IcSettings from '../icons/IcSettings';
+import {MAIN_HORIZONTAL_PADDING, SCREEN_WIDTH} from '../common/constants';
 
 const BottomNavigator: FC = () => {
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
@@ -90,6 +91,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
+    width: SCREEN_WIDTH - 2 * MAIN_HORIZONTAL_PADDING,
+    alignSelf: 'center',
   },
 
   item: {

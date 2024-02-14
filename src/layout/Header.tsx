@@ -6,6 +6,7 @@ import StarBox from '../components/StarBox';
 import NotificationItem from '../components/NotificationItem';
 import IcBell from '../icons/IcBell';
 import IcLamp from '../icons/IcLamp';
+import {MAIN_HORIZONTAL_PADDING, SCREEN_WIDTH} from '../common/constants';
 
 const Header = () => {
   return (
@@ -32,7 +33,12 @@ const Header = () => {
 export default Header;
 
 const styles = StyleSheet.create({
-  container: {flexDirection: 'row', justifyContent: 'space-between'},
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: SCREEN_WIDTH - 2 * MAIN_HORIZONTAL_PADDING,
+    alignSelf: 'center',
+  },
   notifications: {
     flexDirection: 'row',
     justifyContent: 'space-between',

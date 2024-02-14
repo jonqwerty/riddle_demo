@@ -25,7 +25,12 @@ const Layout: FC<ILayoutProps> = ({children}) => {
         angleCenter={{x: 0.3, y: 0.5}}>
         <View style={styles.container}>
           <Header />
-          {children}
+
+          <ScrollView
+            showsVerticalScrollIndicator={false}
+            style={styles.scroll}>
+            {children}
+          </ScrollView>
 
           <View style={styles.bottomNavigator}>
             <BottomNavigator />
@@ -47,10 +52,11 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    marginHorizontal: MAIN_HORIZONTAL_PADDING,
     marginTop: MAIN_HORIZONTAL_PADDING,
     marginBottom: 30,
   },
+
+  scroll: {marginTop: 5},
 
   bottomNavigator: {marginTop: 'auto'},
 });
