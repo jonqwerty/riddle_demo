@@ -55,6 +55,7 @@ const HomeScreen: FC = () => {
         bottomImageThree={require('../assets/images/lego.png')}
         titleSize={16}
       />
+      <View style={styles.gap} />
     </Layout>
   );
 };

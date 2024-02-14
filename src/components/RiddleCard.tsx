@@ -1,6 +1,7 @@
 import {Image, ImageSourcePropType, StyleSheet, Text, View} from 'react-native';
 import React, {FC} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
+import {Shadow} from 'react-native-shadow-2';
 
 import {Colors, FontFamily} from '../common/style';
 import {MAIN_HORIZONTAL_PADDING, SCREEN_WIDTH} from '../common/constants';
@@ -31,7 +32,11 @@ const RiddleCard: FC<IRiddleCardProps> = ({
   titleSize,
 }) => {
   return (
-    <View style={styles.container}>
+    <Shadow
+      distance={20}
+      startColor={Colors.shadow}
+      offset={[20, 15]}
+      style={styles.container}>
       <LinearGradient
         colors={[Colors.card_bg_100, Colors.card_bg_200]}
         style={styles.innerContainer}
@@ -72,7 +77,7 @@ const RiddleCard: FC<IRiddleCardProps> = ({
           </View>
         </LinearGradient>
       </LinearGradient>
-    </View>
+    </Shadow>
   );
 };
 

@@ -12,6 +12,7 @@ export const Colors = {
   pink_200: '#FF708A',
 
   light_100: 'rgba(248, 249, 253, 0.66)',
+  shadow: 'rgba(212, 213, 217, 0.36)',
 
   main_bg_100: '#F0F2FF',
   main_bg_200: '#E7EBFF',

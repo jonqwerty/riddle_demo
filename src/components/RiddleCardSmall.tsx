@@ -1,6 +1,7 @@
 import {Image, ImageSourcePropType, StyleSheet, Text, View} from 'react-native';
 import React, {FC} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
+import {Shadow} from 'react-native-shadow-2';
 
 import {Colors, FontFamily} from '../common/style';
 import {HALF_SCREEN_WIDTH} from '../common/constants';
@@ -23,7 +24,11 @@ const RiddleCardSmall: FC<IRiddleCardSmallProps> = ({
   rightTopCornerColor,
 }) => {
   return (
-    <View style={styles.container}>
+    <Shadow
+      distance={15}
+      startColor={Colors.shadow}
+      offset={[-10, 20]}
+      style={styles.container}>
       <LinearGradient
         colors={[Colors.card_bg_100, Colors.card_bg_200]}
         style={styles.innerContainer}
@@ -49,7 +54,7 @@ const RiddleCardSmall: FC<IRiddleCardSmallProps> = ({
           />
         </LinearGradient>
       </LinearGradient>
-    </View>
+    </Shadow>
   );
 };
 
@@ -58,14 +63,14 @@ export default RiddleCardSmall;
 const styles = StyleSheet.create({
   container: {
     height: 200,
-    width: HALF_SCREEN_WIDTH - 8,
+    width: HALF_SCREEN_WIDTH - 10,
     borderRadius: 26,
     backgroundColor: Colors.white,
   },
 
   innerContainer: {
     height: 198,
-    width: HALF_SCREEN_WIDTH - 2 - 8,
+    width: HALF_SCREEN_WIDTH - 2 - 10,
     borderRadius: 25,
   },
 
@@ -73,7 +78,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     padding: 20,
     height: 198,
-    width: HALF_SCREEN_WIDTH - 2 - 8,
+    width: HALF_SCREEN_WIDTH - 2 - 10,
     borderRadius: 25,
     justifyContent: 'flex-end',
   },
