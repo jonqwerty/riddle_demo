@@ -1,4 +1,4 @@
-import {ImageBackground, StyleSheet, View} from 'react-native';
+import {ImageBackground, ScrollView, StyleSheet, View} from 'react-native';
 import React, {FC} from 'react';
 
 import Header from './Header';
@@ -25,7 +25,6 @@ const Layout: FC<ILayoutProps> = ({children}) => {
         angleCenter={{x: 0.3, y: 0.5}}>
         <View style={styles.container}>
           <Header />
-
           {children}
 
           <View style={styles.bottomNavigator}>

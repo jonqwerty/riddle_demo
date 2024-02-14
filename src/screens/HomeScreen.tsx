@@ -4,6 +4,7 @@ import React, {FC} from 'react';
 import Layout from '../layout/Layout';
 import RiddleCard from '../components/RiddleCard';
 import {Colors} from '../common/style';
+import RiddleCardSmall from '../components/RiddleCardSmall';
 
 const HomeScreen: FC = () => {
   return (
@@ -15,8 +16,30 @@ const HomeScreen: FC = () => {
         image={require('../assets/images/question_marks.png')}
         imgRight={-10}
         imgTop={-5}
-        rightTopCornerColor={Colors.wiolet}
+        rightTopCornerColor={Colors.violet}
       />
+
+      <View style={styles.gap} />
+
+      <View style={styles.row}>
+        <RiddleCardSmall
+          title={'3 Days \nExp. Riddles'}
+          body={'3 days for solving'}
+          image={require('../assets/images/three.png')}
+          imgRight={-10}
+          imgTop={-20}
+          rightTopCornerColor={Colors.pink}
+        />
+
+        <RiddleCardSmall
+          title={'1 Day \nExp. Riddles'}
+          body={'1 day for solving'}
+          image={require('../assets/images/one.png')}
+          imgRight={-10}
+          imgTop={-20}
+          rightTopCornerColor={Colors.pink}
+        />
+      </View>
 
       <View style={styles.gap} />
       <RiddleCard
@@ -39,4 +62,5 @@ export default HomeScreen;
 
 const styles = StyleSheet.create({
   gap: {height: 30},
+  row: {flexDirection: 'row', justifyContent: 'space-between'},
 });

@@ -22,8 +22,9 @@ export const Colors = {
   font_200: '#3D444F',
   font_100: '#5F6F89',
 
+  pink: '#fc97e6',
   blue: '#dee2fc',
-  wiolet: '#A126E6',
+  violet: '#A126E6',
   white: '#fff',
   black: '#000',
   red: '#F00',

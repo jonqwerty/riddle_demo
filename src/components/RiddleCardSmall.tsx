@@ -3,32 +3,24 @@ import React, {FC} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
 import {Colors, FontFamily} from '../common/style';
-import {MAIN_HORIZONTAL_PADDING, SCREEN_WIDTH} from '../common/constants';
+import {HALF_SCREEN_WIDTH} from '../common/constants';
 
-interface IRiddleCardProps {
+interface IRiddleCardSmallProps {
   title: string;
   body: string;
   image: ImageSourcePropType | undefined;
   imgRight: number;
   imgTop: number;
   rightTopCornerColor: string;
-  bottomImageOne?: ImageSourcePropType | undefined;
-  bottomImageTwo?: ImageSourcePropType | undefined;
-  bottomImageThree?: ImageSourcePropType | undefined;
-  titleSize?: number;
 }
 
-const RiddleCard: FC<IRiddleCardProps> = ({
+const RiddleCardSmall: FC<IRiddleCardSmallProps> = ({
   title,
   body,
   image,
   imgRight,
   imgTop,
   rightTopCornerColor,
-  bottomImageOne,
-  bottomImageTwo,
-  bottomImageThree,
-  titleSize,
 }) => {
   return (
     <View style={styles.container}>
@@ -42,14 +34,11 @@ const RiddleCard: FC<IRiddleCardProps> = ({
           colors={[Colors.card_bg_100, rightTopCornerColor]}
           style={styles.innerGradient}
           useAngle={true}
-          angle={40}
-          angleCenter={{x: 1.8, y: 0.8}}>
+          angle={45}
+          angleCenter={{x: 1.6, y: 0.3}}>
           <View style={styles.row}>
             <View>
-              <Text
-                style={[styles.title, {fontSize: titleSize ? titleSize : 24}]}>
-                {title}
-              </Text>
+              <Text style={styles.title}>{title}</Text>
               <Text style={styles.body}>{body}</Text>
             </View>
           </View>
@@ -58,51 +47,44 @@ const RiddleCard: FC<IRiddleCardProps> = ({
             resizeMode="cover"
             style={[styles.image, {right: imgRight, top: imgTop}]}
           />
-
-          <View style={styles.bottomImages}>
-            {bottomImageOne ? (
-              <Image source={bottomImageOne} resizeMode="cover" />
-            ) : null}
-            {bottomImageTwo ? (
-              <Image source={bottomImageTwo} resizeMode="cover" />
-            ) : null}
-            {bottomImageThree ? (
-              <Image source={bottomImageThree} resizeMode="cover" />
-            ) : null}
-          </View>
         </LinearGradient>
       </LinearGradient>
     </View>
   );
 };
 
-export default RiddleCard;
+export default RiddleCardSmall;
 
 const styles = StyleSheet.create({
-  container: {height: 200, borderRadius: 26, backgroundColor: Colors.white},
+  container: {
+    height: 200,
+    width: HALF_SCREEN_WIDTH - 8,
+    borderRadius: 26,
+    backgroundColor: Colors.white,
+  },
 
   innerContainer: {
     height: 198,
-    width: SCREEN_WIDTH - MAIN_HORIZONTAL_PADDING - MAIN_HORIZONTAL_PADDING - 2,
+    width: HALF_SCREEN_WIDTH - 2 - 8,
     borderRadius: 25,
   },
 
   innerGradient: {
     position: 'absolute',
-    padding: 24,
+    padding: 20,
     height: 198,
-    width: SCREEN_WIDTH - MAIN_HORIZONTAL_PADDING - MAIN_HORIZONTAL_PADDING - 2,
+    width: HALF_SCREEN_WIDTH - 2 - 8,
     borderRadius: 25,
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
   },
 
   row: {flexDirection: 'row'},
-  bottomImages: {flexDirection: 'row', gap: 10, marginTop: 18},
 
   title: {
     fontFamily: FontFamily.poppins_bold,
     color: Colors.font_200,
-    width: '55%',
+    fontSize: 16,
+    width: '80%',
   },
 
   body: {
@@ -111,7 +93,7 @@ const styles = StyleSheet.create({
     opacity: 0.66,
     lineHeight: 18,
     fontSize: 12,
-    width: '55%',
+    width: '80%',
     marginTop: 15,
   },
 
