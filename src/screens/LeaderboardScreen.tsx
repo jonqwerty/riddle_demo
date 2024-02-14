@@ -6,6 +6,7 @@ import DayItem from '../components/DayItem';
 import {MAIN_HORIZONTAL_PADDING} from '../common/constants';
 import {Colors, FontFamily} from '../common/style';
 import Button from '../components/Button';
+import Input from '../components/Input';
 
 const LeaderboardScreen: FC = () => {
   return (
@@ -16,19 +17,15 @@ const LeaderboardScreen: FC = () => {
         <DayItem text={'1 day'} isActive={false} />
         <DayItem text={'Special'} isActive={false} />
       </View>
-
       <Text style={styles.title}>Weekly Riddles</Text>
-
       <Text style={styles.body}>
         I can add to several hundred. But can’t subtract multiply or divide.
         Whatever I add to, it’s always in front of you but never behind. And the
         number I add to You can’t really hide!
       </Text>
-
       <Text style={styles.text}>Who am I?</Text>
-
+      <Input />
       <Button name={'Submit'} />
-
       <Text style={styles.textAttempts}>5 attempts remaining</Text>
     </Layout>
   );
