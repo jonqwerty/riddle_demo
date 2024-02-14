@@ -26,7 +26,7 @@ const RiddleCardSmall: FC<IRiddleCardSmallProps> = ({
   return (
     <Shadow
       distance={15}
-      startColor={Colors.shadow}
+      startColor={Colors.shadow_100}
       offset={[-10, 20]}
       style={styles.container}>
       <LinearGradient

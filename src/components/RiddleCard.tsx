@@ -34,7 +34,7 @@ const RiddleCard: FC<IRiddleCardProps> = ({
   return (
     <Shadow
       distance={20}
-      startColor={Colors.shadow}
+      startColor={Colors.shadow_100}
       offset={[20, 15]}
       style={styles.container}>
       <LinearGradient
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     opacity: 0.66,
     lineHeight: 18,
     fontSize: 12,
-    width: '55%',
+    width: SCREEN_WIDTH > 350 ? '55%' : '40%',
     marginTop: 15,
   },
 
