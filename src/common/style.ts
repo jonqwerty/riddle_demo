@@ -11,9 +11,11 @@ export const Colors = {
   pink_100: '#E75AC8',
   pink_200: '#FF708A',
 
-  light_100: 'F8F9FD',
+  // light_100: '#F8F9FD',
+  light_100: 'rgba(248, 249, 253, 0.66)',
 
-  main_bg: '#F0F2FF',
+  main_bg_100: '#F0F2FF',
+  main_bg_200: '#E7EBFF',
 
   white: '#fff',
   black: '#000',
