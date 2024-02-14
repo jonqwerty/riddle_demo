@@ -11,7 +11,7 @@ const Input: FC = () => {
     <Shadow
       distance={25}
       startColor={Colors.shadow_100}
-      offset={[38, 20]}
+      offset={[38, 3]}
       style={styles.inputWrapper}>
       <LinearGradient
         colors={[Colors.card_bg_100, Colors.card_bg_200]}
@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     borderRadius: 26,
     backgroundColor: Colors.white,
     marginHorizontal: MAIN_HORIZONTAL_PADDING,
-    marginVertical: 20,
     justifyContent: 'center',
     alignItems: 'center',
   },

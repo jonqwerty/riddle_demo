@@ -1,10 +1,10 @@
 import {ImageBackground, ScrollView, StyleSheet, View} from 'react-native';
 import React, {FC} from 'react';
+import LinearGradient from 'react-native-linear-gradient';
 
 import Header from './Header';
 import BottomNavigator from './BottomNavigator';
 import {Colors} from '../common/style';
-import LinearGradient from 'react-native-linear-gradient';
 import {MAIN_HORIZONTAL_PADDING} from '../common/constants';
 
 interface ILayoutProps {

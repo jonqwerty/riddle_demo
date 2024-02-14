@@ -40,7 +40,7 @@ const RiddleCardSmall: FC<IRiddleCardSmallProps> = ({
           style={styles.innerGradient}
           useAngle={true}
           angle={45}
-          angleCenter={{x: 1.6, y: 0.3}}>
+          angleCenter={{x: 1.5, y: 0.3}}>
           <View style={styles.row}>
             <View>
               <Text style={styles.title}>{title}</Text>
@@ -62,14 +62,14 @@ export default RiddleCardSmall;
 
 const styles = StyleSheet.create({
   container: {
-    height: 200,
+    height: 164,
     width: HALF_SCREEN_WIDTH - 10,
     borderRadius: 26,
     backgroundColor: Colors.white,
   },
 
   innerContainer: {
-    height: 198,
+    height: 162,
     width: HALF_SCREEN_WIDTH - 2 - 10,
     borderRadius: 25,
   },
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   innerGradient: {
     position: 'absolute',
     padding: 20,
-    height: 198,
+    height: 162,
     width: HALF_SCREEN_WIDTH - 2 - 10,
     borderRadius: 25,
     justifyContent: 'flex-end',
@@ -86,10 +86,11 @@ const styles = StyleSheet.create({
   row: {flexDirection: 'row'},
 
   title: {
-    fontFamily: FontFamily.poppins_bold,
+    fontFamily: FontFamily.poppins_extrabold,
     color: Colors.font_200,
-    fontSize: 16,
-    width: '80%',
+    fontSize: 14,
+    lineHeight: 20,
+    width: '90%',
   },
 
   body: {
@@ -99,7 +100,7 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     fontSize: 12,
     width: '80%',
-    marginTop: 15,
+    marginTop: 10,
   },
 
   image: {position: 'absolute'},

@@ -24,8 +24,15 @@ const LeaderboardScreen: FC = () => {
         number I add to You can’t really hide!
       </Text>
       <Text style={styles.text}>Who am I?</Text>
-      <Input />
-      <Button name={'Submit'} />
+
+      <View style={styles.inputMargin}>
+        <Input />
+      </View>
+
+      <View style={styles.inputMargin}>
+        <Button name={'Submit'} />
+      </View>
+
       <Text style={styles.textAttempts}>5 attempts remaining</Text>
     </Layout>
   );
@@ -45,7 +52,7 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 10,
     marginLeft: MAIN_HORIZONTAL_PADDING,
-    fontFamily: FontFamily.poppins_bold,
+    fontFamily: FontFamily.poppins_extrabold,
     color: Colors.font_200,
     fontSize: 24,
   },
@@ -55,7 +62,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: MAIN_HORIZONTAL_PADDING,
     fontFamily: FontFamily.poppins_regular,
     color: Colors.font_100,
-    opacity: 0.66,
+    opacity: 0.86,
     lineHeight: 28,
     fontSize: 16,
   },
@@ -71,13 +78,15 @@ const styles = StyleSheet.create({
   },
 
   textAttempts: {
-    marginTop: 5,
+    marginTop: 20,
     paddingHorizontal: MAIN_HORIZONTAL_PADDING,
     fontFamily: FontFamily.poppins_medium,
     color: Colors.font_100,
-    opacity: 0.76,
+    opacity: 0.86,
     fontSize: 12,
     lineHeight: 18,
     alignSelf: 'center',
   },
+
+  inputMargin: {marginTop: 20},
 });

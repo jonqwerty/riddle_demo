@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React, {FC} from 'react';
 import {Shadow} from 'react-native-shadow-2';
 
@@ -11,15 +11,15 @@ interface IButtonProps {
 
 const Button: FC<IButtonProps> = ({name}) => {
   return (
-    <Shadow
-      distance={25}
-      startColor={Colors.shadow_100}
-      offset={[38, 20]}
-      style={styles.container}>
-      <View>
+    <TouchableOpacity>
+      <Shadow
+        distance={25}
+        startColor={Colors.shadow_100}
+        offset={[38, 3]}
+        style={styles.container}>
         <Text style={styles.text}>{name}</Text>
-      </View>
-    </Shadow>
+      </Shadow>
+    </TouchableOpacity>
   );
 };
 
@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
     borderRadius: 26,
     backgroundColor: Colors.green_200,
     marginHorizontal: MAIN_HORIZONTAL_PADDING,
-    marginVertical: 20,
     width: SCREEN_WIDTH - 2 * MAIN_HORIZONTAL_PADDING,
     justifyContent: 'center',
     alignItems: 'center',

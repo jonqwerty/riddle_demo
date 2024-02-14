@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     width: SCREEN_WIDTH - 2 * MAIN_HORIZONTAL_PADDING,
     alignSelf: 'center',
   },
+
   notifications: {
     flexDirection: 'row',
     justifyContent: 'space-between',

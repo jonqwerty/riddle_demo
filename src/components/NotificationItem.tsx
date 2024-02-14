@@ -1,8 +1,8 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React, {FC} from 'react';
+import LinearGradient from 'react-native-linear-gradient';
 
 import {Colors, FontFamily} from '../common/style';
-import LinearGradient from 'react-native-linear-gradient';
 
 interface INotificationItemProps {
   icon: React.ReactElement;

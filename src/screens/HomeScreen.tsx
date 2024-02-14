@@ -63,7 +63,7 @@ const HomeScreen: FC = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  gap: {height: 30},
+  gap: {height: 25},
 
   row: {
     flexDirection: 'row',

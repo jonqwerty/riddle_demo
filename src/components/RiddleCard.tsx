@@ -108,10 +108,11 @@ const styles = StyleSheet.create({
   },
 
   row: {flexDirection: 'row'},
+
   bottomImages: {flexDirection: 'row', gap: 10, marginTop: 18},
 
   title: {
-    fontFamily: FontFamily.poppins_bold,
+    fontFamily: FontFamily.poppins_extrabold,
     color: Colors.font_200,
     width: '55%',
   },
