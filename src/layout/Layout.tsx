@@ -1,8 +1,8 @@
 import {StyleSheet, View} from 'react-native';
 import React, {FC} from 'react';
 
-import Header from '../components/Header';
-import BottomNavigator from '../components/BottomNavigator';
+import Header from './Header';
+import BottomNavigator from './BottomNavigator';
 import {Colors} from '../common/style';
 
 interface ILayoutProps {

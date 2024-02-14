@@ -14,17 +14,17 @@ const Routes = () => {
       <Stack.Screen
         name="Home"
         component={HomeScreen}
-        options={{animation: 'slide_from_bottom'}}
+        options={{gestureEnabled: false}}
       />
       <Stack.Screen
         name="Leaderboard"
         component={LeaderboardScreen}
-        options={{animation: 'slide_from_bottom'}}
+        options={{gestureEnabled: false}}
       />
       <Stack.Screen
         name="Settings"
         component={SettingsScreen}
-        options={{animation: 'slide_from_bottom'}}
+        options={{gestureEnabled: false}}
       />
     </Stack.Navigator>
   );
