@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React, {FC} from 'react';
 import {Shadow} from 'react-native-shadow-2';
 
@@ -8,26 +8,30 @@ import {MAIN_HORIZONTAL_PADDING, SCREEN_WIDTH} from '../common/constants';
 interface IDayItemProps {
   text: string;
   isActive: boolean;
+  setActiveItem: (t: string) => void;
 }
 
-const DayItem: FC<IDayItemProps> = ({text, isActive}) => {
+const DayItem: FC<IDayItemProps> = ({text, isActive, setActiveItem}) => {
+  const pressHandler = () => setActiveItem(text);
   return (
-    <Shadow
-      distance={15}
-      startColor={isActive ? Colors.shadow_200 : Colors.shadow_100}
-      offset={[0, 0]}
-      style={isActive ? [styles.container, styles.active] : styles.container}>
-      <View>
-        <Text
-          style={
-            isActive
-              ? [styles.text, {color: Colors.green_200, opacity: 1}]
-              : styles.text
-          }>
-          {text}
-        </Text>
-      </View>
-    </Shadow>
+    <TouchableOpacity onPress={pressHandler}>
+      <Shadow
+        distance={15}
+        startColor={isActive ? Colors.shadow_200 : Colors.shadow_100}
+        offset={[0, 0]}
+        style={isActive ? [styles.container, styles.active] : styles.container}>
+        <View>
+          <Text
+            style={
+              isActive
+                ? [styles.text, {color: Colors.green_200, opacity: 1}]
+                : styles.text
+            }>
+            {text}
+          </Text>
+        </View>
+      </Shadow>
+    </TouchableOpacity>
   );
 };
 

@@ -1,5 +1,5 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 
 import Layout from '../layout/Layout';
 import DayItem from '../components/DayItem';
@@ -9,13 +9,30 @@ import Button from '../components/Button';
 import Input from '../components/Input';
 
 const LeaderboardScreen: FC = () => {
+  const [activeItem, setActiveItem] = useState<string>('Weekly');
   return (
     <Layout>
       <View style={styles.daysRow}>
-        <DayItem text={'Weekly'} isActive={true} />
-        <DayItem text={'3 days'} isActive={false} />
-        <DayItem text={'1 day'} isActive={false} />
-        <DayItem text={'Special'} isActive={false} />
+        <DayItem
+          text={'Weekly'}
+          isActive={activeItem === 'Weekly'}
+          setActiveItem={setActiveItem}
+        />
+        <DayItem
+          text={'3 days'}
+          isActive={activeItem === '3 days'}
+          setActiveItem={setActiveItem}
+        />
+        <DayItem
+          text={'1 day'}
+          isActive={activeItem === '1 day'}
+          setActiveItem={setActiveItem}
+        />
+        <DayItem
+          text={'Special'}
+          isActive={activeItem === 'Special'}
+          setActiveItem={setActiveItem}
+        />
       </View>
       <Text style={styles.title}>Weekly Riddles</Text>
       <Text style={styles.body}>
