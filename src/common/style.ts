@@ -11,12 +11,19 @@ export const Colors = {
   pink_100: '#E75AC8',
   pink_200: '#FF708A',
 
-  // light_100: '#F8F9FD',
   light_100: 'rgba(248, 249, 253, 0.66)',
 
   main_bg_100: '#F0F2FF',
   main_bg_200: '#E7EBFF',
 
+  card_bg_100: '#F1F3FF',
+  card_bg_200: '#E7E9F8',
+
+  font_200: '#3D444F',
+  font_100: '#5F6F89',
+
+  blue: '#dee2fc',
+  wiolet: '#A126E6',
   white: '#fff',
   black: '#000',
   red: '#F00',

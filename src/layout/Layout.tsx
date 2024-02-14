@@ -5,6 +5,7 @@ import Header from './Header';
 import BottomNavigator from './BottomNavigator';
 import {Colors} from '../common/style';
 import LinearGradient from 'react-native-linear-gradient';
+import {MAIN_HORIZONTAL_PADDING} from '../common/constants';
 
 interface ILayoutProps {
   children: React.ReactNode;
@@ -24,7 +25,9 @@ const Layout: FC<ILayoutProps> = ({children}) => {
         angleCenter={{x: 0.3, y: 0.5}}>
         <View style={styles.container}>
           <Header />
+
           {children}
+
           <View style={styles.bottomNavigator}>
             <BottomNavigator />
           </View>
@@ -38,14 +41,15 @@ export default Layout;
 
 const styles = StyleSheet.create({
   image: {flex: 1},
+
   overlay: {
     flex: 1,
   },
 
   container: {
     flex: 1,
-    marginHorizontal: 40,
-    marginTop: 40,
+    marginHorizontal: MAIN_HORIZONTAL_PADDING,
+    marginTop: MAIN_HORIZONTAL_PADDING,
     marginBottom: 30,
   },
 
