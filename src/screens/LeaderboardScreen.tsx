@@ -12,45 +12,47 @@ const LeaderboardScreen: FC = () => {
   const [activeItem, setActiveItem] = useState<string>('Weekly');
   return (
     <Layout>
-      <View style={styles.daysRow}>
-        <DayItem
-          text={'Weekly'}
-          isActive={activeItem === 'Weekly'}
-          setActiveItem={setActiveItem}
-        />
-        <DayItem
-          text={'3 days'}
-          isActive={activeItem === '3 days'}
-          setActiveItem={setActiveItem}
-        />
-        <DayItem
-          text={'1 day'}
-          isActive={activeItem === '1 day'}
-          setActiveItem={setActiveItem}
-        />
-        <DayItem
-          text={'Special'}
-          isActive={activeItem === 'Special'}
-          setActiveItem={setActiveItem}
-        />
-      </View>
-      <Text style={styles.title}>Weekly Riddles</Text>
-      <Text style={styles.body}>
-        I can add to several hundred. But can’t subtract multiply or divide.
-        Whatever I add to, it’s always in front of you but never behind. And the
-        number I add to You can’t really hide!
-      </Text>
-      <Text style={styles.text}>Who am I?</Text>
+      <>
+        <View style={styles.daysRow}>
+          <DayItem
+            text={'Weekly'}
+            isActive={activeItem === 'Weekly'}
+            setActiveItem={setActiveItem}
+          />
+          <DayItem
+            text={'3 days'}
+            isActive={activeItem === '3 days'}
+            setActiveItem={setActiveItem}
+          />
+          <DayItem
+            text={'1 day'}
+            isActive={activeItem === '1 day'}
+            setActiveItem={setActiveItem}
+          />
+          <DayItem
+            text={'Special'}
+            isActive={activeItem === 'Special'}
+            setActiveItem={setActiveItem}
+          />
+        </View>
+        <Text style={styles.title}>Weekly Riddles</Text>
+        <Text style={styles.body}>
+          I can add to several hundred. But can’t subtract multiply or divide.
+          Whatever I add to, it’s always in front of you but never behind. And
+          the number I add to You can’t really hide!
+        </Text>
+        <Text style={styles.text}>Who am I?</Text>
 
-      <View style={styles.inputMargin}>
-        <Input />
-      </View>
+        <View style={styles.inputMargin}>
+          <Input />
+        </View>
 
-      <View style={styles.inputMargin}>
-        <Button name={'Submit'} />
-      </View>
+        <View style={styles.inputMargin}>
+          <Button name={'Submit'} />
+        </View>
 
-      <Text style={styles.textAttempts}>5 attempts remaining</Text>
+        <Text style={styles.textAttempts}>5 attempts remaining</Text>
+      </>
     </Layout>
   );
 };

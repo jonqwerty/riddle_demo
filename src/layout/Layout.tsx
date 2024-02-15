@@ -1,4 +1,11 @@
-import {ImageBackground, ScrollView, StyleSheet, View} from 'react-native';
+import {
+  ImageBackground,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  View,
+} from 'react-native';
 import React, {FC} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -26,11 +33,16 @@ const Layout: FC<ILayoutProps> = ({children}) => {
         <View style={styles.container}>
           <Header />
 
-          <ScrollView
-            showsVerticalScrollIndicator={false}
-            style={styles.scroll}>
-            {children}
-          </ScrollView>
+          <KeyboardAvoidingView
+            style={styles.keyboardAvoidingView}
+            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+            <ScrollView
+              contentContainerStyle={styles.contentContainerStyle}
+              showsVerticalScrollIndicator={false}
+              style={styles.scroll}>
+              {children}
+            </ScrollView>
+          </KeyboardAvoidingView>
 
           <View style={styles.bottomNavigator}>
             <BottomNavigator />
@@ -56,7 +68,14 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
 
+  keyboardAvoidingView: {flex: 1},
+
+  contentContainerStyle: {flexGrow: 1},
+
   scroll: {marginTop: 5},
 
-  bottomNavigator: {marginTop: 'auto'},
+  bottomNavigator: {
+    // marginTop: 'auto',
+    marginBottom: 0,
+  },
 });
