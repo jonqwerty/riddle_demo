@@ -2,8 +2,9 @@ import {StyleSheet, Text} from 'react-native';
 import React, {FC} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
-import IcStar from '../icons/IcStar';
 import {Colors, FontFamily} from '../common/style';
+import Icon from './Icon';
+import {starIcon} from '../common/icons';
 
 const StarBox: FC = () => {
   return (
@@ -13,7 +14,7 @@ const StarBox: FC = () => {
       useAngle={true}
       angle={145}
       angleCenter={{x: 0.3, y: 0.5}}>
-      <IcStar fill={Colors.white} />
+      <Icon icon={starIcon} stroke={Colors.white} width={18} height={18} />
       <Text style={styles.text}>954</Text>
     </LinearGradient>
   );
@@ -37,7 +38,6 @@ const styles = StyleSheet.create({
     color: Colors.white,
     lineHeight: 13,
     fontSize: 11,
-    fontWeight: '600',
     marginLeft: 8,
   },
 });

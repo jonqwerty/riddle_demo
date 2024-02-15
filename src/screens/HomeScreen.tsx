@@ -29,7 +29,7 @@ const HomeScreen: FC = () => {
           image={require('../assets/images/three.png')}
           imgRight={-10}
           imgTop={-20}
-          rightTopCornerColor={Colors.pink}
+          rightTopCornerColor={Colors.yellow}
         />
 
         <RiddleCardSmall

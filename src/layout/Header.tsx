@@ -4,9 +4,9 @@ import React from 'react';
 import {Colors} from '../common/style';
 import StarBox from '../components/StarBox';
 import NotificationItem from '../components/NotificationItem';
-import IcBell from '../icons/IcBell';
-import IcLamp from '../icons/IcLamp';
 import {MAIN_HORIZONTAL_PADDING, SCREEN_WIDTH} from '../common/constants';
+import Icon from '../components/Icon';
+import {bellIcon, lampIcon} from '../common/icons';
 
 const Header = () => {
   return (
@@ -14,13 +14,27 @@ const Header = () => {
       <StarBox />
       <View style={styles.notifications}>
         <NotificationItem
-          icon={<IcBell fill={Colors.grey_200} />}
+          icon={
+            <Icon
+              icon={bellIcon}
+              stroke={Colors.grey_200}
+              width={16}
+              height={18}
+            />
+          }
           text={'2'}
           color_100={Colors.pink_100}
           color_200={Colors.pink_200}
         />
         <NotificationItem
-          icon={<IcLamp fill={Colors.grey_200} />}
+          icon={
+            <Icon
+              icon={lampIcon}
+              stroke={Colors.grey_200}
+              width={18}
+              height={20}
+            />
+          }
           text={'5'}
           color_100={Colors.green_100}
           color_200={Colors.green_200}

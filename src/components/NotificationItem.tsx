@@ -62,6 +62,5 @@ const styles = StyleSheet.create({
     color: Colors.white,
     lineHeight: 13,
     fontSize: 11,
-    fontWeight: '600',
   },
 });

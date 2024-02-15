@@ -25,6 +25,7 @@ export const Colors = {
   font_200: '#3D444F',
   font_100: '#5F6F89',
 
+  yellow: '#F8A121',
   pink: '#fc97e6',
   blue: '#dee2fc',
   violet: '#A126E6',

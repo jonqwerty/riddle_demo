@@ -6,10 +6,9 @@ import {StackNavigationProp} from '@react-navigation/stack';
 
 import {RootStackParamList, Screen} from '../common/enums';
 import {Colors, FontFamily} from '../common/style';
-import IcHome from '../icons/IcHome';
-import IcLeaderboard from '../icons/IcLeaderboard';
-import IcSettings from '../icons/IcSettings';
 import {MAIN_HORIZONTAL_PADDING, SCREEN_WIDTH} from '../common/constants';
+import Icon from '../components/Icon';
+import {homeIcon, leaderboardIcon, settingsIcon} from '../common/icons';
 
 const BottomNavigator: FC = () => {
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
@@ -31,9 +30,20 @@ const BottomNavigator: FC = () => {
     <View style={styles.container}>
       <TouchableOpacity style={styles.item} onPress={handleHomeScreen}>
         {route.name === Screen.Home ? (
-          <IcHome fill={Colors.grey_200} opacity={1} />
+          <Icon
+            icon={homeIcon}
+            stroke={Colors.grey_200}
+            width={18}
+            height={20}
+          />
         ) : (
-          <IcHome fill={Colors.grey_100} opacity={0.66} />
+          <Icon
+            icon={homeIcon}
+            stroke={Colors.grey_100}
+            width={18}
+            height={20}
+            opacity={0.66}
+          />
         )}
 
         <Text
@@ -48,9 +58,20 @@ const BottomNavigator: FC = () => {
 
       <TouchableOpacity style={styles.item} onPress={handleLeaderboardScreen}>
         {route.name === Screen.Leaderboard ? (
-          <IcLeaderboard fill={Colors.grey_200} opacity={1} />
+          <Icon
+            icon={leaderboardIcon}
+            stroke={Colors.grey_200}
+            width={22}
+            height={20}
+          />
         ) : (
-          <IcLeaderboard fill={Colors.grey_100} opacity={0.66} />
+          <Icon
+            icon={leaderboardIcon}
+            stroke={Colors.grey_100}
+            width={22}
+            height={20}
+            opacity={0.66}
+          />
         )}
 
         <Text
@@ -65,9 +86,21 @@ const BottomNavigator: FC = () => {
 
       <TouchableOpacity style={styles.item} onPress={handleSettingsScreen}>
         {route.name === Screen.Settings ? (
-          <IcSettings fill={Colors.grey_200} opacity={1} />
+          <Icon
+            icon={settingsIcon}
+            stroke={Colors.grey_200}
+            width={20}
+            height={20}
+            opacity={1}
+          />
         ) : (
-          <IcSettings fill={Colors.grey_100} opacity={0.66} />
+          <Icon
+            icon={settingsIcon}
+            stroke={Colors.grey_100}
+            width={20}
+            height={20}
+            opacity={0.66}
+          />
         )}
 
         <Text
@@ -102,20 +135,18 @@ const styles = StyleSheet.create({
 
   textChoosen: {
     marginTop: 20,
-    fontFamily: FontFamily.poppins_semibold,
+    fontFamily: FontFamily.poppins_bold,
     color: Colors.grey_200,
     lineHeight: 11,
     fontSize: 10,
-    fontWeight: '600',
   },
 
   textNotChoosen: {
     marginTop: 20,
-    fontFamily: FontFamily.poppins_semibold,
+    fontFamily: FontFamily.poppins_bold,
     color: Colors.grey_100,
     lineHeight: 11,
     fontSize: 10,
-    fontWeight: '600',
     opacity: 0.4,
   },
 });
