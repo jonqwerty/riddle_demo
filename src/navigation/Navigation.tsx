@@ -14,17 +14,20 @@ const Routes = () => {
       <Stack.Screen
         name="Home"
         component={HomeScreen}
-        options={{gestureEnabled: false}}
+        options={{
+          gestureEnabled: false,
+          animation: 'none',
+        }}
       />
       <Stack.Screen
         name="Leaderboard"
         component={LeaderboardScreen}
-        options={{gestureEnabled: false}}
+        options={{gestureEnabled: false, animation: 'none'}}
       />
       <Stack.Screen
         name="Settings"
         component={SettingsScreen}
-        options={{gestureEnabled: false}}
+        options={{gestureEnabled: false, animation: 'none'}}
       />
     </Stack.Navigator>
   );
